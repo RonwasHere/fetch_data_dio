@@ -1,16 +1,3 @@
-# fetch_data_dio
+the project already works, but stuck in loading.... and cannot open the main menu...
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/RonwasHere/fetch_data_dio/assets/97945445/41cfff40-0260-46ae-bc10-7b77acb8362b)
