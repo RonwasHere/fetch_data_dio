@@ -9,11 +9,12 @@ import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:lottie/lottie.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:top_snackbar_flutter/custom_snack_bar.dart';
+import 'package:top_snackbar_flutter/top_snack_bar.dart';
 
 class HomeView extends StatelessWidget {
-   HomeView({super.key});
-  
-  
+  HomeView({super.key});
+
   @override
   Widget build(BuildContext context) {
     DioService().getMethod("https://jsonplaceholder.typicode.com/posts");
@@ -60,7 +61,10 @@ class HomeView extends StatelessWidget {
                           if (await InternetConnectionChecker().hasConnection == true) {
                             postController.getPosts();
                           } else {
-                            showCustomSnackBar(context);
+                            showTopSnackBar(
+                              Overlay.of(context), 
+                            CustomSnackBar.error(
+                              message: "Something went wrong. Please check your Internet Connection and try again"));
                           }
                         },
                         color: MyColors.prColor,

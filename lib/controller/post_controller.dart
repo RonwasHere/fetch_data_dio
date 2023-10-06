@@ -1,11 +1,10 @@
 import 'package:fetch_data_dio/model/post_model.dart';
 import 'package:fetch_data_dio/service/dio_service.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:get/get.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class PostController extends GetxController {
   RxList<PostModel> posts = RxList();
