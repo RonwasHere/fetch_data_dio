@@ -1,4 +1,4 @@
-import 'dart:developer';
+// import 'dart:developer';
 
 import 'package:dio/dio.dart';
 
@@ -13,8 +13,8 @@ class DioService {
     )
         .then((response) {
           
-      print("**************");
-      log(response.toString());
+      // print("**************");
+      // log(response.toString());
 
       return response;
     });

@@ -17,7 +17,7 @@ class PostController extends GetxController {
 
   getPosts() async {
     isInternetConnectFunc();
-    isLoading = true.obs;
+    isLoading.value = true;
     var response = await DioService().getMethod(url);
 
     if (response.statusCode == 200) {
@@ -25,7 +25,7 @@ class PostController extends GetxController {
         posts.add(PostModel.fromJson(element));
       });
 
-      isLoading = false.obs;
+      isLoading.value = false;
     }
   }
 

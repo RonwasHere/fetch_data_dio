@@ -61,10 +61,10 @@ class HomeView extends StatelessWidget {
                           if (await InternetConnectionChecker().hasConnection == true) {
                             postController.getPosts();
                           } else {
-                            showTopSnackBar(
-                              Overlay.of(context), 
-                            CustomSnackBar.error(
-                              message: "Something went wrong. Please check your Internet Connection and try again"));
+                            // showTopSnackBar(
+                            //   Overlay.of(context), 
+                            showCustomSnackBar(context);
+                           
                           }
                         },
                         color: MyColors.prColor,
