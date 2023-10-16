@@ -1,3 +1,3 @@
-the project already works, but stuck in loading.... and cannot open the main menu...
+FIX, when first time open the app, its show circle loading indicator... then load this image
 
-![image](https://github.com/RonwasHere/fetch_data_dio/assets/97945445/41cfff40-0260-46ae-bc10-7b77acb8362b)
+![image](https://github.com/RonwasHere/fetch_data_dio/assets/97945445/c6568ce4-c71b-4141-8507-9572c8f4b78a)
